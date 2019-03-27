@@ -1,7 +1,10 @@
 #include "carro.h"
 #include <iostream>
 
+#include "classe.h"
+
 using namespace std;
+
 int main(int argc, char const *argv[])
 {
 	Carro meuCarro("Fusca", 1976, 40, 7);
