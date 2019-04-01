@@ -1,11 +1,12 @@
 #ifndef _CARRO_H_
 #define _CARRO_H_
-
+#include <iostream>
 #include <string>
+using namespace std;
 
 class Carro{
 public:
-	Carro(string modelo_, int ano_, int capacidadeTanque_, int consumo_);
+	Carro(string nome_, int ano_, int capacidadeTanque_, float consumo_);
 	~Carro();
 
 	//Métodos GETTERS
@@ -15,8 +16,7 @@ public:
 	string getModeloCarro();
 	int getAnoCarro();
 	int getCapacidadeTanque();
-
-	void set
+	float getConsumoCarro();
 
 	void mover(float distancia_);
 	void abastecer(float combustivel_);
@@ -25,12 +25,9 @@ public:
 private:
 	string modeloCarro;
 	int anoCarro;
-
-
-
 	int capacidadeTanque; // Capacidade Máxima em litros de combustível.
 	float consumoCarro; // Consumo em quilômetros por litro.
-	float qtdeCombustivel; // 
+	float qtdeCombustivel; // Quantidade atual de combustível.
 	float distanciaPercorrida;
 
 };
