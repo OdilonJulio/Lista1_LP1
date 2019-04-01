@@ -11,14 +11,16 @@ int main(int argc, char const *argv[])
 	meuCarro.mover(5);
 	meuCarro.abastecer(35);
 	
-	cout << "Abastecido! Temos agora " << meuCarro.getQtdeCombustível() << "litros." << endl;
-	cout << "Autonomia atual de " << meuCarro.getAutonomia() << "km." << endl;
+	cout << "Abastecido! Temos agora " << meuCarro.getQtdeCombustivel()
+		 << "litros." << endl;
+	cout << "Autonomia atual de " << meuCarro.getAutonomia()
+		 << "km." << endl;
 
 	meuCarro.mover(127.6);
 	meuCarro.mover(3.2);
 
 	cout << "Já percorremos " << meuCarro.getDistanciaPercorrida() << "km" << endl;
-	cout << "Ainda temos " << meuCarro.getQtdeCombustível() << " litros. " << endl;
+	cout << "Ainda temos " << meuCarro.getQtdeCombustivel() << " litros. " << endl;
 
 	cout << "Autonomia atual de " << meuCarro.getAutonomia() << "km." << endl;
 	return 0;	

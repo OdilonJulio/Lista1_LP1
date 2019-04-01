@@ -5,23 +5,32 @@
 
 class Carro{
 public:
-	Carro(string nome, int ano, int tanque, int consumo);
+	Carro(string modelo_, int ano_, int capacidadeTanque_, int consumo_);
 	~Carro();
 
+	//Métodos GETTERS
 	float getQtdeCombustivel();
 	float getDistanciaPercorrida();
 	float getAutonomia();
+	string getModeloCarro();
+	int getAnoCarro();
+	int getCapacidadeTanque();
 
-	void mover();
-	void abastecer();
+	void set
+
+	void mover(float distancia_);
+	void abastecer(float combustivel_);
 
 
 private:
-	string nomeCarro;
+	string modeloCarro;
 	int anoCarro;
-	int capacidadeTanque;
-	float consumoCarro;
-	float combustivelAtual;
+
+
+
+	int capacidadeTanque; // Capacidade Máxima em litros de combustível.
+	float consumoCarro; // Consumo em quilômetros por litro.
+	float qtdeCombustivel; // 
 	float distanciaPercorrida;
 
 };
